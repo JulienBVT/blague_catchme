@@ -17,5 +17,6 @@ button.addEventListener('mouseover', () => {
 
 button.addEventListener('click', () => {
   video.style.display = 'block';
+  video.requestFullscreen();
   video.play();
 });
