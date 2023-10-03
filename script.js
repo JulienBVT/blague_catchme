@@ -15,8 +15,11 @@ button.addEventListener('mouseover', () => {
   }, 100);
 });
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+  console.log("attrapé");
   video.style.display = 'block';
+  video.volume = 1;
+  console.log(video.volume);
   video.requestFullscreen();
   video.play();
 });
